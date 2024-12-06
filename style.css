@@ -1,100 +1,122 @@
 :root {
-    --main-color: #F47B2C;
-    --secondary-color: #D3D6D8;
-  }
-  *{
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  #form-content {
-    text-align: center;
-  }
-  #form-content a {
-    display: inline-block;
-    text-decoration: none;
-    margin: 2rem 1rem;
-  }
-  #form-content h2.active {
-    border-bottom: 2px solid var(--main-color);
+  --main-color: #F47B2C;
+  --secondary-color: #D3D6D8;
+}
 
-  }
-  form input:focus{
-    background-color: #ffff;
-    border-bottom: solid var(--main-color);
-    outline: none;
-  }
-  .wrapper {
-    max-width: 400px;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    min-height: 500px;
-  }
-  h2 {
-    font-size: 1rem;
-    color: var(--main-color);
-    margin: 10px 0;
-    text-align: center;
-  }
-  
-  #avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 15px auto;
-  }
-  
-  form input {
-    width: 90%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1rem;
-    background-color: #f0f0f0;
-  }
-  form input:hover {
-    background-color: #ffff;
-  }
-  
-  
-  form input[type="submit"] {
-    background-color: var(--main-color);
-    color: white;
-    border: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0 0 2rem var(--main-color);
-    transition:  all 0.5s ease-in;
-  }
-  form input[type="submit"]:hover{
-    box-shadow: 0 0 2rem var(--main-color);
-  }
+* {
+  box-sizing: border-box;
+}
 
-  #form-footer {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  #form-footer a {
-    color: var(--main-color);
-    text-decoration: none;
-  }
-  .inactive {
-    color: var(--secondary-color);
-  }
-  .active {
-    font-weight: bold;
-    color: var(--main-color);
-  }
-  
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#form-content {
+  text-align: center;
+}
+
+#form-content a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 2rem 1rem;
+}
+
+#form-content h2.active {
+  border-bottom: 2px solid var(--main-color);
+}
+
+form input:focus {
+  background-color: #ffff;
+;
+  outline: none;
+}
+
+.wrapper {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-height: 500px;
+
+}
+
+h2 {
+  font-size: 1rem;
+  color: var(--main-color);
+  margin: 10px 0;
+  text-align: center;
+}
+
+#avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px auto;
+}
+
+form input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease-in-out; /* Add smooth scaling effect */
+}
+
+/* Input focus animation */
+form input:focus {
+  background-color: #ffff;
+  border-bottom: solid var(--main-color);
+  outline: none;
+  transform: scale(1.05); /* Slight scaling when focused */
+}
+
+form input:hover {
+  background-color: #ffff;
+}
+
+form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 2rem var(--main-color);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Hover effect for submit button with slight scaling */
+form input[type="submit"]:hover {
+  box-shadow: 0 0 3rem var(--main-color);
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+#form-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#form-footer a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.inactive {
+  color: var(--secondary-color);
+}
+
+.active {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
