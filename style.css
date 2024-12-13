@@ -33,16 +33,15 @@ body {
 
 form input:focus {
   background-color: #ffff;
-;
+  border-bottom: solid var(--main-color);
   outline: none;
 }
 
 .wrapper {
   max-width: 400px;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   min-height: 500px;
 
 }
@@ -65,20 +64,21 @@ form input {
   width: 90%;
   padding: 12px;
   margin: 10px 0;
-  border: 1px solid var(--secondary-color);
   border-radius: 5px;
   text-align: center;
   font-size: 1rem;
   background-color: #f0f0f0;
   transition: transform 0.3s ease-in-out; /* Add smooth scaling effect */
+  border: none;
+  padding: 20px;
 }
-
 /* Input focus animation */
 form input:focus {
   background-color: #ffff;
   border-bottom: solid var(--main-color);
   outline: none;
   transform: scale(1.05); /* Slight scaling when focused */
+  border: 2px solid var(--secondary-color)
 }
 
 form input:hover {
@@ -104,6 +104,9 @@ form input[type="submit"]:hover {
 #form-footer {
   margin-top: 10px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+
+
 }
 
 #form-footer a {
